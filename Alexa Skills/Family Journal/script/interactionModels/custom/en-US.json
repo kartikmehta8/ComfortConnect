@@ -1,0 +1,102 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "lets catch up",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": ["sounds good"]
+                },
+                {
+                    "name": "ReminderIntent",
+                    "slots": [],
+                    "samples": ["reminder"]
+                },
+                {
+                    "name": "getResponseIntent",
+                    "slots": [
+                        {
+                            "name": "response",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": ["{response}"]
+                        }
+                    ],
+                    "samples": [
+                        "day",
+                        "terrible",
+                        "amazing",
+                        "I had",
+                        "it was",
+                        "fine",
+                        "ok",
+                        "bad",
+                        "good"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": [],
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            }
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "getResponseIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "response",
+                            "type": "AMAZON.SearchQuery",
+                            "elicitationRequired": true,
+                            "confirmationRequired": false,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.219053231234.209202765027"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.219053231234.209202765027",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How is your day going?"
+                    }
+                ]
+            }
+        ]
+    },
+    "version": "28"
+}

@@ -1,0 +1,6 @@
+flask
+flask_restful
+flask-sqlalchemy
+sqlalchemy-cockroachdb
+google-cloud-language==1.2.0
+scipy

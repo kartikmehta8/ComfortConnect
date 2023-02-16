@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "hackduke2020-1607192390184",
+    "private_key_id": "3ef709e563750dc898962e7ee9595b419f3645d6",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC/xmFJ0UbLQvP2\nm89FkMh4mEGczjWbFqSLOAq7DxVx0VoZkTrby5H0zJs5Mq/6SNmRxmyQibCpqa4Y\nU11ffR9MoWaxFp/ziYdylhrwkF/FARjeR3B+JM3Ro3OOQjNqthe5TNSNqYAZ1Pzw\n+VF4SL/ObO/oDMo3H0RMCrGidhD6qYU/xdVs0f214BLsfbdayMZVqKE9eORiUBh9\nw5EtE/qhIFuxlJn5nyzuU93/PKubO7YlpOfg3cE/WFlsF0Oz0etkF+M9QtvT0dnn\n4G4sQS7Nt4vJMcVjBGBdiRUWuhSf0aK+7jYMfVbU+7jdcLlgirxdwYBaOTspQlsT\ngnR2lkjtAgMBAAECggEADCds/Aos4+3y20LFsKF76xSvN9pj0Ffvhrk/CNrsX4HG\npY8sPUjaD7s17TqWp5SdYV1DfSeU0DPmSjliVg5ugONLyFZoPb2OHYeA3pUv1KL8\nqf26FeyMNMiYpr/wVUeEGmTRpcbDzR9QBo+uh6KIsXL7A2hoGnU7VVxqJKM58UDY\nDtDgblJ0SUolHFsVaeExcohcRJCmwLjsHUt9oLlZbwhrD+rbLDlQjVystbHgLPnL\nzZ4iYeM8javXfQMNv/8snmKvFpb6D4srSdaq3ltlEYNBOqcwt/B6m35C+yo/Lz7j\n2AHu2cQwW9BzkSaxJAJaxn5MAAikples3Ifl72PoUQKBgQDiuZ1/rDEgHRmBDzKv\n0VzLw7oYjVZ5tF6EbCfZBwzH5D6DV+S0kgqN3HE8DRDy99GET56FB6llSdX2k2H5\naaAAPL/Mb7BnIEuGq5Ugf8HK7LrHHMw/6vemJYwPoBPLCutkRGs6OFYCTIM+wHha\n87k9OYmkjbk6ib7oYd2yfaH6mQKBgQDYiX1oE5iJyg6QuWD8UlBQwJnkEO/TZ5uL\n26P7r+AsdVVXwnC+6KT/y3Qd9pKJODPwWrp7n9CzDfwa3bqTG7I8Kz0/rknXQQYi\nmu/i49w3egmSySd2i5tJJsT/Nknv32lGKI0ZvXg314dmYjtRKURV4ull3wMuQ7gi\nGAC/67ZpdQKBgQC4H/O3Zriyks9Oj3Ajdsx8sqRkIgxTZFbKBifKSb5oa4UVF4El\n3+BwWtEe6qGUIAvn/t0GvjUki/UWfZS4f74v0yYUObQx2/laEehW70oLqXr6DvoV\nApZCOQXo/qB0aZbG5AWMz4mR7l87zAUyH/KUtTCCEZKW5pzCjhAET6EHKQKBgQC1\n8MBYZK60h/w5Cio9mIQ3db1Ybgq03MdLel+MqLh5YpU0ygGlxyBsdWy5iGaTuY+a\nkwFBwoS/Di8X+9o6pPjbqZErIqyUmuQmy3xobgCo9Hd6yF3KM39ktZisv9bcICH6\nezQjvpl2gjgYhM1GYqAychieKgYoJ2pd60EmAU4hyQKBgQCcebAhiXi7KCXxPBGM\nvEbgmx/n1MfYKMak5XQkaJ2xFtgZmTJhT4FqLq+xisf5kNLsv1H2PX0/31f2MvcV\ns1rR2txP4vjryXN745cH1DA7bVpq3H/yuGKLORcuflognDS8/iJZ7H+HHVlgVrpW\naU2zgB7FAqPrzBGawmCXpX/mEQ==\n-----END PRIVATE KEY-----\n",
+    "client_email": "starting-account-emmgjpb28jt6@hackduke2020-1607192390184.iam.gserviceaccount.com",
+    "client_id": "111948361173662857982",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/starting-account-emmgjpb28jt6%40hackduke2020-1607192390184.iam.gserviceaccount.com"
+}

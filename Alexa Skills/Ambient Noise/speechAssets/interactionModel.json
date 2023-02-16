@@ -1,0 +1,509 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "morale booster",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FightIntent",
+                    "slots": [
+                        {
+                            "name": "person",
+                            "type": "LIST_OF_PEOPLE",
+                            "samples": [
+                                "{person} because {reason}",
+                                "I did fight with {person} because {reason}",
+                                "I fought with {person} because {reason}",
+                                "I had a fight with {person}",
+                                "I did fight with {person}",
+                                "{person}",
+                                "I fought with {person}"
+                            ]
+                        },
+                        {
+                            "name": "reason",
+                            "type": "LIST_OF_ARGUE_REASONS",
+                            "samples": [
+                                "I had a {reason} with him",
+                                "I had a {reason} with her",
+                                "The reason was her {reason} me",
+                                "The reason was him {reason} me",
+                                "We had some kind of {reason}",
+                                "She {reason} me",
+                                "He {reason} me",
+                                "The reason was {reason}",
+                                "{reason}",
+                                "I fought because {reason}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I had a fight with {person} as she {reason} me",
+                        "I had a fight with {person} as he {reason} me",
+                        "I fought with my {person} because she {reason}",
+                        "I fought with my {person} because he {reason}",
+                        "I had a fight with my {person} as she {reason} me",
+                        "I had a fight with my {person} as he {reason} me",
+                        "I had a fight with my {person} because {reason}",
+                        "I fought with my {person} because {reason}",
+                        "I had a fight with my {person}",
+                        "I was involved in a fight",
+                        "I had a fight",
+                        "I had a fight with {person} because {reason}",
+                        "I fought with {person} because {reason}",
+                        "I had a fight with {person}"
+                    ]
+                },
+                {
+                    "name": "InterviewIntent",
+                    "slots": [
+                        {
+                            "name": "company",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "samples": [
+                                "It was {company}",
+                                "The company was {company}",
+                                "{company}"
+                            ]
+                        },
+                        {
+                            "name": "when",
+                            "type": "AMAZON.DATE",
+                            "samples": [
+                                "It was {when}",
+                                "It was on {when}",
+                                "{when}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I couldn't clear my interview with {company}",
+                        "{when} I failed in {company} interview",
+                        "{when} I failed in an interview",
+                        "I wasn't able to crack my {company} interview",
+                        "I could not clear my interview"
+                    ]
+                },
+                {
+                    "name": "FeelingIntent",
+                    "slots": [
+                        {
+                            "name": "emotion",
+                            "type": "LIST_OF_FEELINGS",
+                            "samples": [
+                                "It is happening to me ",
+                                "I am feeling {emotion}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I am feeling",
+                        "I am {emotion}",
+                        "I am feeling {emotion}",
+                        "I am feeling bad because {emotion}",
+                        "I am not able to {emotion}"
+                    ]
+                },
+                {
+                    "name": "YesIntent",
+                    "slots": [],
+                    "samples": [
+                        "sure",
+                        "that would be good",
+                        "please yes",
+                        "yes please",
+                        "i would love to",
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "NoIntent",
+                    "slots": [],
+                    "samples": [
+                        "Thanks",
+                        "No that was all",
+                        "No Thank you",
+                        "Bye",
+                        "Thank you",
+                        "No"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_ARGUE_REASONS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "misunderstood"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "disrespect",
+                                "synonyms": ["disrespected", "of disrespect"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "misunderstanding",
+                                "synonyms": ["of misunderstanding"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "offend",
+                                "synonyms": [
+                                    "offended",
+                                    "she offended me",
+                                    "he offended me"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "insult",
+                                "synonyms": ["insulted", "of insult", "Insult"]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_PEOPLE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "boss",
+                                "synonyms": [
+                                    "department head",
+                                    "senior",
+                                    "manager"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "boy friend"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "girl friend"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "husband",
+                                "synonyms": ["spouse"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wife",
+                                "synonyms": ["spouse"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "friend"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sister",
+                                "synonyms": ["sis"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brother",
+                                "synonyms": ["bro"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parents",
+                                "synonyms": ["parent"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mother"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "father"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_FEELINGS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "lonely"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bored"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "angry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "excited"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hungry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "insomniac",
+                                "synonyms": ["insomnia"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sleep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "anxious"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "happy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sad"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "FightIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.589536138148"
+                    },
+                    "slots": [
+                        {
+                            "name": "person",
+                            "type": "LIST_OF_PEOPLE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1041406787872.1182800849076"
+                            }
+                        },
+                        {
+                            "name": "reason",
+                            "type": "LIST_OF_ARGUE_REASONS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1041406787872.968259316700"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "InterviewIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "company",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.60107837273.1047721900805"
+                            }
+                        },
+                        {
+                            "name": "when",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.60107837273.1403680458175"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "FeelingIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "emotion",
+                            "type": "LIST_OF_FEELINGS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.853539058851.1059928951851"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Intent.589536138148",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure it was a fight with your {person} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1041406787872.1182800849076",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You fought with whom"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Whom did you fight with?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "You had the fight with whom?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "With whom you had the fight?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1041406787872.968259316700",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Why did you fight"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What prompted you to fight"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What was the reason behind your fight"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.60107837273.1047721900805",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which company you applied to?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.60107837273.1403680458175",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "When was the interview?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "When were you interviewed?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.853539058851.1132687958770",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What made you feel like {emotion} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What is the reason for feeling {emotion} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Why are you feeling {emotion} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Why are you feeling"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.853539058851.1059928951851",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What happened"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What are you feeling"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.853539058851.118637345260",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Why are you feeling"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Why are you feeling {emotion} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What is the reason for feeling {emotion} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What made you feel like {emotion} ?"
+                    }
+                ]
+            }
+        ]
+    }
+}
