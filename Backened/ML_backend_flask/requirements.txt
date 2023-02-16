@@ -1,0 +1,6 @@
+Flask==2.2.2
+joblib==1.2.0
+numpy==1.23.3
+pandas==1.5.3
+preprocess_kgptalkie==0.1.3
+scikit_learn==1.2.1

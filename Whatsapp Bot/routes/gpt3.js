@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "procces.env.key",
 });
 
 router.post("/disi", async (req,res)=>{
