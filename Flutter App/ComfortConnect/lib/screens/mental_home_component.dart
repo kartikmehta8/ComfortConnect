@@ -1,5 +1,6 @@
+import 'dart:convert';
 import 'dart:ui';
-
+import 'package:http/http.dart' as http;
 import 'package:coolicons/coolicons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
@@ -217,8 +218,21 @@ class MentalHomeComponent extends StatelessWidget {
                       padding: const EdgeInsets.all(4),
                       child: InkWell(
                         onTap: () {
+                          // final String apiUrl =
+                          //     'https://backendgpt-production.up.railway.app/twilcall/call';
+
+                          // await http.get(Uri.parse(apiUrl)).then((response) {
+                          //   if (response.statusCode == 200) {
+                          //     final jsonData = json.decode(response.body);
+                          //     print(jsonData);
+                          //   } else {
+                          //     print(
+                          //         'Request failed with status: ${response.statusCode}.');
+                          //   }
+                          // });
                           // _launchURL();
-                          callTwilio();
+                          // callTwilio();
+                          fetchAlbum();
                           print('mic');
                         },
                         child: Container(
@@ -397,9 +411,14 @@ class MentalHomeComponent extends StatelessWidget {
                         horizontal: 12,
                         vertical: 4,
                       ),
-                      child: const Center(
-                        child: Text(
-                          "Talk Now",
+                      child: InkWell(
+                        onTap: () {
+                          fetchAlbum();
+                        },
+                        child: const Center(
+                          child: Text(
+                            "Talk Now",
+                          ),
                         ),
                       ),
                     ),
@@ -565,10 +584,25 @@ callNumber() async {
   const number = '+91112'; //set the number here
   bool? res = await FlutterPhoneDirectCaller.callNumber(number);
   print('Inside Function');
-} 
+}
 
 callTwilio() async {
   const number = '+916392031302'; //set the number here
   bool? res = await FlutterPhoneDirectCaller.callNumber(number);
   print('Inside Function');
+}
+
+Future<void> fetchAlbum() async {
+  try {
+    print("hii");
+    var response = await http.get(Uri.parse(
+        "https://backendgpt-production.up.railway.app/calltwilio/call"));
+    if (response.statusCode == 200) {
+      print('Success');
+    } else {
+      print('Failed');
+    }
+  } catch (e) {
+    print(e);
+  }
 }
