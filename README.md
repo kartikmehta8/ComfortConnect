@@ -14,6 +14,8 @@ Our project is a voice-based platform for mental health support, addressing the 
 ### Technology Stack
 - Machine Learning Models - SVM
 - Open AI
+- IPFS
+- Polygon
 - Full Stack Development with MERN
 - Alexa Skills
 - Twilio
